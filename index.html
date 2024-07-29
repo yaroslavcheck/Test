@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+    <title>Запрос доступа к камере</title>
+</head>
+<body>
+    <button id="test">test</button>
+    <script>
+        function handleButtonClick(event) {
+            swal("Our First Alert", "With some body text and success icon!", "success");
+        }
+
+        // Получаем все элементы с классом 'my-button'
+        const buttons = document.querySelectorAll('.test');
+
+        // Применяем функцию ко всем кнопкам
+        buttons.forEach(button => {
+            button.addEventListener('click', handleButtonClick);
+        });
+        
+    </script>
+</body>
+</html>
